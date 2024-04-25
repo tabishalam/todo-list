@@ -1,0 +1,44 @@
+input {
+    font-size: 1.6rem;
+    padding: 1.6rem 1.2rem;
+    outline: none;
+    border-radius: .4rem;
+    border: 1px solid #EEEEEE;
+    transition: all .3s;
+
+    @media screen and (max-width: 768px) {
+        padding: 1.3rem 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 1.2rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    &:focus {
+        border: 1px solid #2D70FD;
+    }
+
+    &::placeholder {
+        font-size: 1.6rem;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0;
+    
+        @media screen and (max-width: 500px) {
+            font-size: 1.4rem;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 1.2rem;
+        }
+    }
+}

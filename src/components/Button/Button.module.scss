@@ -1,0 +1,31 @@
+.button {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    
+    outline: none;
+    background: #2D70FD;
+    border-radius: .4rem;
+    border: 1px solid #2D70FD;
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+    
+    @media screen and (max-width: 500px) {
+        font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: .8rem 1.6rem;
+        font-size: 1.2rem;
+    }
+}
