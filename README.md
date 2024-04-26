@@ -13,6 +13,7 @@ A simple to-do list application built with React.
 
 - React
 - JavaScript
+- Redux-Toolkit
 - SCSS
 - CSS
 - HTML

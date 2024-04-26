@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    position: relative;
+    margin-bottom: 4rem;
+
+    button {
+        position: absolute;
+        top: 50%;
+        right: .8%;
+        transform: translate(-.5%, -50%);
+    }
+
+    input {
+        width: 100%;
+    }
+}

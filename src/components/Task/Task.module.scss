@@ -16,6 +16,10 @@
     color: #2D70FD;
   }
 
+  input {
+    display: none;
+  }
+
   .checkbox__label {
     -webkit-user-select: none;
     user-select: none;

@@ -1,11 +1,19 @@
 import React from 'react'
 
 import classes from "./Task.module.scss"
+import { useDispatch } from 'react-redux';
+import { TasksListAction } from '../../store/TasksList';
 
-function Task({ task, id, onChange, isCompleted }) {
+function Task({ task, id, isCompleted }) {
+  const dispatch = useDispatch();
+
+  function handleChange() {
+    dispatch(TasksListAction.handleStatusChange(id))
+  }
+  
   return (
     <div className={classes.checkbox__wrapper}>
-        <input className={classes.checkbox__input} id={id} type="checkbox" style={{display: 'none'}} onChange={onChange} checked={isCompleted} />
+        <input className={classes.checkbox__input} id={id} type="checkbox" onChange={handleChange} checked={isCompleted} />
         <label className={classes.checkbox__label} htmlFor={id}>
             <span>
                 <svg width="18px" height="15px" viewBox="0 0 12 9">
